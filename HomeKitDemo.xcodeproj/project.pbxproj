@@ -15,6 +15,10 @@
 		A1115F591D9407FE00EA1618 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1115F571D9407FE00EA1618 /* LaunchScreen.storyboard */; };
 		A1115F641D9407FE00EA1618 /* HomeKitDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A1115F631D9407FE00EA1618 /* HomeKitDemoTests.m */; };
 		A1115F6F1D9407FE00EA1618 /* HomeKitDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A1115F6E1D9407FE00EA1618 /* HomeKitDemoUITests.m */; };
+		A1115F7F1D9408CB00EA1618 /* HomeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1115F7E1D9408CB00EA1618 /* HomeKit.framework */; };
+		A17B5B061D97D701008B5A2B /* MyHomeKit.m in Sources */ = {isa = PBXBuildFile; fileRef = A17B5B051D97D701008B5A2B /* MyHomeKit.m */; };
+		A17B5B0A1D981FCF008B5A2B /* RoomColViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A17B5B091D981FCF008B5A2B /* RoomColViewCell.m */; };
+		A17B5B0D1D983582008B5A2B /* currentRoomVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A17B5B0C1D983582008B5A2B /* currentRoomVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,14 @@
 		A1115F6A1D9407FE00EA1618 /* HomeKitDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HomeKitDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1115F6E1D9407FE00EA1618 /* HomeKitDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeKitDemoUITests.m; sourceTree = "<group>"; };
 		A1115F701D9407FE00EA1618 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1115F7C1D9408CB00EA1618 /* HomeKitDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HomeKitDemo.entitlements; sourceTree = "<group>"; };
+		A1115F7E1D9408CB00EA1618 /* HomeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HomeKit.framework; path = System/Library/Frameworks/HomeKit.framework; sourceTree = SDKROOT; };
+		A17B5B041D97D701008B5A2B /* MyHomeKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyHomeKit.h; sourceTree = "<group>"; };
+		A17B5B051D97D701008B5A2B /* MyHomeKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyHomeKit.m; sourceTree = "<group>"; };
+		A17B5B081D981FCF008B5A2B /* RoomColViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoomColViewCell.h; sourceTree = "<group>"; };
+		A17B5B091D981FCF008B5A2B /* RoomColViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoomColViewCell.m; sourceTree = "<group>"; };
+		A17B5B0B1D983582008B5A2B /* currentRoomVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = currentRoomVC.h; sourceTree = "<group>"; };
+		A17B5B0C1D983582008B5A2B /* currentRoomVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = currentRoomVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1115F7F1D9408CB00EA1618 /* HomeKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +98,7 @@
 				A1115F621D9407FE00EA1618 /* HomeKitDemoTests */,
 				A1115F6D1D9407FE00EA1618 /* HomeKitDemoUITests */,
 				A1115F471D9407FE00EA1618 /* Products */,
+				A1115F7D1D9408CB00EA1618 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,14 +115,10 @@
 		A1115F481D9407FE00EA1618 /* HomeKitDemo */ = {
 			isa = PBXGroup;
 			children = (
-				A1115F4C1D9407FE00EA1618 /* AppDelegate.h */,
-				A1115F4D1D9407FE00EA1618 /* AppDelegate.m */,
-				A1115F4F1D9407FE00EA1618 /* ViewController.h */,
-				A1115F501D9407FE00EA1618 /* ViewController.m */,
-				A1115F521D9407FE00EA1618 /* Main.storyboard */,
-				A1115F551D9407FE00EA1618 /* Assets.xcassets */,
-				A1115F571D9407FE00EA1618 /* LaunchScreen.storyboard */,
-				A1115F5A1D9407FE00EA1618 /* Info.plist */,
+				A17B5B071D981F87008B5A2B /* View */,
+				A17B5B031D97D6AA008B5A2B /* Tools */,
+				A17B5B021D97D68F008B5A2B /* ViewContorller */,
+				A17B5B011D97D66E008B5A2B /* App */,
 				A1115F491D9407FE00EA1618 /* Supporting Files */,
 			);
 			path = HomeKitDemo;
@@ -138,6 +148,73 @@
 				A1115F701D9407FE00EA1618 /* Info.plist */,
 			);
 			path = HomeKitDemoUITests;
+			sourceTree = "<group>";
+		};
+		A1115F7D1D9408CB00EA1618 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A1115F7E1D9408CB00EA1618 /* HomeKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A17B5B011D97D66E008B5A2B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A1115F7C1D9408CB00EA1618 /* HomeKitDemo.entitlements */,
+				A1115F4C1D9407FE00EA1618 /* AppDelegate.h */,
+				A1115F4D1D9407FE00EA1618 /* AppDelegate.m */,
+				A1115F521D9407FE00EA1618 /* Main.storyboard */,
+				A1115F551D9407FE00EA1618 /* Assets.xcassets */,
+				A1115F571D9407FE00EA1618 /* LaunchScreen.storyboard */,
+				A1115F5A1D9407FE00EA1618 /* Info.plist */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+		A17B5B021D97D68F008B5A2B /* ViewContorller */ = {
+			isa = PBXGroup;
+			children = (
+				A17B5B0E1D98358D008B5A2B /* HomeVC */,
+				A17B5B0F1D9835A3008B5A2B /* RoomVC */,
+			);
+			name = ViewContorller;
+			sourceTree = "<group>";
+		};
+		A17B5B031D97D6AA008B5A2B /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				A17B5B041D97D701008B5A2B /* MyHomeKit.h */,
+				A17B5B051D97D701008B5A2B /* MyHomeKit.m */,
+			);
+			name = Tools;
+			sourceTree = "<group>";
+		};
+		A17B5B071D981F87008B5A2B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A17B5B081D981FCF008B5A2B /* RoomColViewCell.h */,
+				A17B5B091D981FCF008B5A2B /* RoomColViewCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		A17B5B0E1D98358D008B5A2B /* HomeVC */ = {
+			isa = PBXGroup;
+			children = (
+				A1115F4F1D9407FE00EA1618 /* ViewController.h */,
+				A1115F501D9407FE00EA1618 /* ViewController.m */,
+			);
+			name = HomeVC;
+			sourceTree = "<group>";
+		};
+		A17B5B0F1D9835A3008B5A2B /* RoomVC */ = {
+			isa = PBXGroup;
+			children = (
+				A17B5B0B1D983582008B5A2B /* currentRoomVC.h */,
+				A17B5B0C1D983582008B5A2B /* currentRoomVC.m */,
+			);
+			name = RoomVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,7 +284,13 @@
 				TargetAttributes = {
 					A1115F451D9407FD00EA1618 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = GBCQU3WJHA;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.HomeKit = {
+								enabled = 1;
+							};
+						};
 					};
 					A1115F5E1D9407FE00EA1618 = {
 						CreatedOnToolsVersion = 8.0;
@@ -273,7 +356,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A17B5B0A1D981FCF008B5A2B /* RoomColViewCell.m in Sources */,
+				A17B5B0D1D983582008B5A2B /* currentRoomVC.m in Sources */,
 				A1115F511D9407FE00EA1618 /* ViewController.m in Sources */,
+				A17B5B061D97D701008B5A2B /* MyHomeKit.m in Sources */,
 				A1115F4E1D9407FE00EA1618 /* AppDelegate.m in Sources */,
 				A1115F4B1D9407FE00EA1618 /* main.m in Sources */,
 			);
@@ -424,6 +510,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = HomeKitDemo/HomeKitDemo.entitlements;
+				DEVELOPMENT_TEAM = GBCQU3WJHA;
 				INFOPLIST_FILE = HomeKitDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wang.HomeKitDemo;
@@ -435,6 +523,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = HomeKitDemo/HomeKitDemo.entitlements;
+				DEVELOPMENT_TEAM = GBCQU3WJHA;
 				INFOPLIST_FILE = HomeKitDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wang.HomeKitDemo;
@@ -507,6 +597,7 @@
 				A1115F751D9407FE00EA1618 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A1115F761D9407FE00EA1618 /* Build configuration list for PBXNativeTarget "HomeKitDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +606,7 @@
 				A1115F781D9407FE00EA1618 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A1115F791D9407FE00EA1618 /* Build configuration list for PBXNativeTarget "HomeKitDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +615,7 @@
 				A1115F7B1D9407FE00EA1618 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

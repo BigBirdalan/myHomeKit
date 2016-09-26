@@ -7,8 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MyHomeKit.h"
+@interface ViewController : UIViewController<UICollectionViewDelegate,UICollectionViewDataSource>
+@property (nonatomic,strong)MyHomeKit *homekit;
+@property (nonatomic,strong)NSArray *homeArry;
+@property (nonatomic,strong)HMHome *currentHome;
+@property (nonatomic,strong)NSArray *roomArry;
 
-@interface ViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UILabel *currentHomeName;
+@property (weak, nonatomic) IBOutlet UICollectionView *roomCollectionView;
 
 
 @end
